@@ -29,3 +29,28 @@ El conjunto de datos utilizado en este proyecto se genera dinámicamente mediant
 **Nota:** El acceso a la API de Twitter (X) puede requerir una cuenta de desarrollador y la obtención de claves de API. Las políticas de la API pueden cambiar, por lo que es importante consultar la documentación oficial de Twitter para desarrolladores.
 
 ## Estructura del Repositorio
+
+├── README.md
+├── notebooks/
+│   └── analisis_sentimiento_alvarez.ipynb  # Notebook de Jupyter con el código del análisis
+├── src/
+│   ├── twitter_api.py                  # Código para interactuar con la API de Twitter
+│   ├── sentiment_analysis.py           # Código para realizar el análisis de sentimiento
+│   ├── preprocessing.py              # Código para preprocesar los tweets
+├── data/
+│   ├── raw_tweets.json               # Tweets sin procesar (opcional)
+│   └── sentiment_results.csv         # Resultados del análisis de sentimiento (opcional)
+├── models/
+│   └── sentiment_model.pkl           # Modelo de análisis de sentimiento (si se entrena uno)
+└── requirements.txt                  # Lista de dependencias de Python
+
+## Tecnologías Utilizadas
+
+* **Python:** Lenguaje de programación principal utilizado para la interacción con la API y el análisis de datos.
+* **Tweepy:** Biblioteca de Python para interactuar con la API de Twitter (X).
+* **NLTK (Natural Language Toolkit) o spaCy:** Bibliotecas de Python para el procesamiento del lenguaje natural (tokenización, lematización, etc.).
+* **Transformers (Hugging Face):** Biblioteca de Python que proporciona modelos pre-entrenados para diversas tareas de PLN, incluyendo el análisis de sentimiento.
+* **TextBlob o VADER (Valence Aware Dictionary and sEntiment Reasoner):** Librerías de Python para el análisis de sentimiento léxico.
+* **Pandas:** Biblioteca de Python para la manipulación y el análisis de datos tabulares.
+* **Matplotlib y Seaborn:** Bibliotecas de Python para la visualización de datos.
+* **Jupyter Notebook/Lab:** Entorno interactivo para escribir y ejecutar código.
